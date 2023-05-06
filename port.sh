@@ -5,4 +5,4 @@ port=$(sudo cat server.xml | grep "Connector port"  | grep "HTTP" | grep -o 'por
 
 #
 #curl ifconfig.me
-echo -e " log into this address for tomcat $(curl -s ifconfig.me):$port "
+echo -e " log into this address for tomcat $(curl -s ifconfig.me):$port"

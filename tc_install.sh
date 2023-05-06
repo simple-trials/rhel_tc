@@ -25,4 +25,4 @@ sudo systemctl start tomcat
 port=$(sudo cat server.xml | grep "Connector port"  | grep "HTTP" | grep -o 'port="[0-9]*"' | sed 's/port="\([0-9]*\)"/\1/')
 #
 #
-echo -e " log into this public ip $(curl -s ifconfig.me):$port "
+echo -e " log into this public ip $(curl -s ifconfig.me):$port 

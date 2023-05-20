@@ -25,4 +25,7 @@ sudo systemctl start tomcat
 port=$(sudo cat server.xml | grep "Connector port"  | grep "HTTP" | grep -o 'port="[0-9]*"' | sed 's/port="\([0-9]*\)"/\1/')
 #
 #
-echo -e " log into this public ip $(curl -s ifconfig.me):$port 
+echo -e " log into this public ip $(curl -s ifconfig.me):$port "
+# for adding or changing the username and password, edit tomcat-users.xml before running tc_install.sh
+# for changing the port, edit the port numner in server.xml before running tc_install.sh
+echo -e " login details - admin/123456   "
